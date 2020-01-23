@@ -1,0 +1,7 @@
+Ejercicio 3 examen de juanmi:
+
+Se añadiría un nuevo campo ciudad, para especificar el nombre de la ciudad del equipo
+de fútbol. Luego en el proyecto, seria añadir la nueva variable string ciudad al fichero Eventos.cs
+y colocarle su set y get. Posteriormente en EventosRepository, modificariamos la linea donde recuperamos la sentencia SQL, ya que hemos
+añadido un nuevo campo. Si anteriormente, recuperabamos solo Equipo Local y Visitante, ahora seria con el campo ciudad.
+El fichero EventosController.cs no se modificaria.

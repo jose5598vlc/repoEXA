@@ -41,7 +41,7 @@ namespace Api.Models
             con.Close();
             return eventos;
         }
-        // ejercicio 3, una vez actualizada la bbdd con un ALTER TABLE en eventos DONDE añadimos un campo dinero = 100 fijo. // sin terminar
+       
         internal void Save(Eventos eventos)
         {
             MySqlConnection con = Connect();

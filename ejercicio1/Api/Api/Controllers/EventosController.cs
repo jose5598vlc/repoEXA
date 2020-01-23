@@ -19,11 +19,6 @@ namespace Api.Controllers
             return eventos;
         }
 
-
-       
- 
-
-
         // GET: api/Eventos/5
         public Eventos Get(int id)
         {
