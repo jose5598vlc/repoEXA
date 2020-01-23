@@ -17,9 +17,19 @@ namespace Api.Controllers
         public IEnumerable<ApuestasDTO> GetDTO(int id)
         {
             var repos = new ApuestasRepository();
-            List<ApuestasDTO> apuest = repos.RetrieveDTO(id);
-            return apuest;
+            List<ApuestasDTO> apu = repos.RetrieveDTO(id);
+            return apu;
         }
+
+
+        // controller del ejercicio 1 del examen de rec
+        public IEnumerable<Apuestas> GetLista(double cuota)
+        {
+            var repo = new ApuestasRepository();
+            List<Apuestas> apu = repo.RetrieveByCuota(cuota);
+            return apu;
+        }
+      
 
      public IEnumerable<Apuestas> GetEmail(string Email)
         {
@@ -36,7 +46,7 @@ namespace Api.Controllers
         }
 
 
-        // ejercicio 1 examen
+        
         public IEnumerable<Apuestas> GetTodasApuestas (int idUsuario)
         {
             var repo = new ApuestasRepository();
@@ -45,7 +55,7 @@ namespace Api.Controllers
         }
 
 
-        // ejercicio 2 del examen
+       
         public IEnumerable<Apuestas> GetCuota (double cuota)
         {
             var repo = new ApuestasRepository();
@@ -54,7 +64,7 @@ namespace Api.Controllers
         }
 
         // GET: api/Apuestas/5
-        public Apuestas Get(int id)
+        public Apuestas Get()
         {
             /*
             var apues = new ApuestasRepository();
